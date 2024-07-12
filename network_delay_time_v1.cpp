@@ -1,0 +1,1 @@
+// a ideia nessa é usar Prim ou Kruskal pra determinar o menor caminho pra chegar em todos os nós
