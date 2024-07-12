@@ -12,7 +12,7 @@ Temas:
  
  (Apague essa seção)
 -->
-# Grafos 1 - Exercise
+# Grafos 2 - Leetcode Problems
 
 **Número da Lista**: 2<br>
 **Conteúdo da Disciplina**: Grafos 2<br>
