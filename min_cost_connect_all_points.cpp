@@ -2,42 +2,38 @@ class Solution {
 public:
     int minCostConnectPoints(vector<vector<int>>& points) {
         int size = points.size();
-        if(size == 0){return 0;}
+        if(size <= 1){return 0;}
 
-        vector<int> usadas(size, INT_MAX);
+        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> min_heap;
 
+        vector<bool> usadas(size);
+        
         int custo = 0;
+        
+        for(int i = 0; i < size; i++){
+            usadas[i] = true;
 
-        for(int i = 0; i < (size - 1); i++){
-            int menor = INT_MAX;
- 
-            vector<int> corde = points[i];
-            auto x = corde[0];
-            auto y = corde[1];
+            vector<int> cord_i = points[i];
 
             for(int j = 0; j < size; j++){
-                vector<int> temp = points[j];
-                auto x_temp = temp[0];
-                auto y_temp = temp[1];
+                if(usadas[j]){continue;}
+                vector<int> cord_j = points[j];
+                min_heap.emplace(abs(cord_i[0] - cord_j[0]) + abs(cord_i[1] - cord_j[1]), j);
+            }
 
-                if(x == x_temp && y == y_temp){
-                    continue;
-                }
-
-                if(usadas[j] == i){
-                    continue;
-                }
-
-                int soma = abs(x - x_temp) + abs(y - y_temp);
-                
-                if(soma < menor){
-                    menor = soma;
-                    usadas[i] = j;
+            while(true){
+                if(usadas[min_heap.top().second]){
+                    min_heap.pop();
                 }
             }
+
+            int menor = min_heap.top().first;
             custo = custo + menor;
+            min_heap.pop();
         }
 
         return custo;
     }
 };
+
+//Time Limit
