@@ -9,8 +9,10 @@ public:
         vector<bool> usadas(size);
         
         int custo = 0;
+        int conexoes_feitas = 0;
+        int i = 0;
         
-        for(int i = 0; i < size; i++){
+        while(++conexoes_feitas < size){
             usadas[i] = true;
 
             vector<int> cord_i = points[i];
@@ -21,13 +23,12 @@ public:
                 min_heap.emplace(abs(cord_i[0] - cord_j[0]) + abs(cord_i[1] - cord_j[1]), j);
             }
 
-            while(true){
-                if(usadas[min_heap.top().second]){
-                    min_heap.pop();
-                }
+            while(usadas[min_heap.top().second]){
+                min_heap.pop();
             }
 
             int menor = min_heap.top().first;
+            i = min_heap.top().second;
             custo = custo + menor;
             min_heap.pop();
         }
@@ -36,4 +37,4 @@ public:
     }
 };
 
-//Time Limit
+//Accepted
