@@ -16,7 +16,7 @@ Temas:
 
 **Número da Lista**: 2<br>
 **Conteúdo da Disciplina**: Grafos 2<br>
-**Vídeo**: 
+**Vídeo**: https://youtu.be/TrFdQkM-8Yc
 
 ## Alunos
 |Matrícula | Aluno |
@@ -25,7 +25,7 @@ Temas:
 | 21/1030710 | Eduardo Ferreira de Aquino |
 
 ## Sobre 
-O objetivo é aplicar o conteúdo de Grafos 2 dentro de problemas reais, no caso, serão escolhidos problemas no nível hard e medium de juízes eletrônicos e outros sites de programação.
+O objetivo é aplicar o conteúdo de Grafos 2 dentro de problemas reais. Serão escolhidos problemas do juiz eletrônico LeetCode.
 
 <!--## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
@@ -44,12 +44,11 @@ Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 ## Exercícios
 
 
-|Nível|Link|Aluno|
-|:---:|:--:|:---:|
-|Difícil|[1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree)|Eduardo e Daniel|
-|Média|[1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability)|Eduardo e Daniel|
-|Média|[743. Network Delay Time](https://leetcode.com/problems/network-delay-time)|Eduardo e Daniel|
+|Link|Nível|Alunos|
+|----|:--:|:---:|
+|[1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points)|Médio|Eduardo e Daniel|
+|[743. Network Delay Time](https://leetcode.com/problems/network-delay-time)|Médio|Eduardo e Daniel|
 
 ## Explicação dos exercícios e respectivas soluções
 
-(WIP)
+https://youtu.be/TrFdQkM-8Yc
